@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Earthquake Risk Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Earthquake Risk Dashboard</h1>
+    <div class="status-indicator">
+      <span class="pulse"></span>
+      <span>Live Monitoring Active</span>
+    </div>
+  </header>
+
+  <main>
+    <div id="dashboard-container"></div>
+
+    <div class="overlay-panel legend-panel">
+      <h3>Monitoring Layers</h3>
+      <div class="legend-item">
+        <span class="dot" style="background: #440154;"></span>
+        <span>Predicted Risk Grid</span>
+      </div>
+      <div class="legend-item">
+        <span class="dot" style="background: white;"></span>
+        <span>Alert Zones (Predicted)</span>
+      </div>
+      <div class="legend-item">
+        <span class="dot" style="background: cyan;"></span>
+        <span>Live Quakes (USGS, 24h)</span>
+      </div>
+    </div>
+  </main>
+
+  <script src="/main.js"></script>
+</body>
+</html>
